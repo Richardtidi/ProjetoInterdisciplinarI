@@ -59,7 +59,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header("Content-type", "image/jpeg")
                 self.end_headers()
-                with open("Projeto/imagem1.jpeg", "rb") as file:
+                with open("Projeto/Imagem1.jpeg", "rb") as file:
                     self.wfile.write(file.read())
 
             if path.endswith('.jpg'):
