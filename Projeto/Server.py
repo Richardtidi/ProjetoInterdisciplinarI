@@ -46,6 +46,13 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             with open("Projeto/quemSomos.html", "rb") as file:
                 self.wfile.write(file.read())
 
+        if path == "/tabelaEstoque.html":
+            self.send_response(200)
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
+            with open("Projeto/tabelaEstoque.html", "rb") as file:
+                self.wfile.write(file.read())
+
         else:
             
             if path.endswith('.jpeg'):
