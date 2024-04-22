@@ -64,10 +64,101 @@ body {
     gap: 2vh;
 }
 
+.botoes-estoque {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3vh;
+}
+.menu-item2 {
+    background: none;
+    border: none;
+    color: var(--corTexto);
+    font-size: 3vh;
+}
+
 .linha {
     width: 40vh;
     border: 1px solid var(--corTexto)
 }
 #grossa {
     width: 45vh;
+}
+
+
+.entradaDados {
+    margin-bottom: 20px;
+}
+
+
+.entradaDados label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+
+.entradaDados input[type="text"] {
+    width: 130%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.entradaDados input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.quemSomos {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quemSomos h1 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--corTexto);
+    border-bottom: 2px solid var(--corTexto);;
+    padding-bottom: 10px; 
+}
+
+.quemSomos p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: var(--corTexto);
+}
+
+.corBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    background-color: var(--corDireita);
+    margin: auto;
+}
+
+.divTabela {
+    display: flex;
+    justify-content: center;
+    width: 90vh; 
+    height: 90vh; 
+    border-radius: 20px;
+    background-color: var(--corEsquerda);
+}
+
+.nomeEstoque {
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: var(--corDireita);
 }
