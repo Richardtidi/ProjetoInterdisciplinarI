@@ -49,6 +49,10 @@ body {
     font-size: 4vh;
 }
 
+.menu-item:hover {
+    cursor:pointer;
+}
+
 #ola {
     position: absolute;
     right: 4vh;
@@ -76,6 +80,10 @@ body {
     border: none;
     color: var(--corTexto);
     font-size: 3vh;
+}
+
+.menu-item2:hover {
+    cursor:pointer;
 }
 
 .linha {
