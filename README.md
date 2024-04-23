@@ -1,0 +1,1 @@
+Esse é um trabalho para faculdade no qual estamos criando um sistema de estoque para uma organização que doa roupas. Estamos utilizando Python para criar um servidor local e pretendemos utilizar SQLite para criar um SGBD dentro do sistema. Para testar o sistema abra o terminal com o código aberto e digite 'python Projeto/Server.py'
