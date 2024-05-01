@@ -163,6 +163,7 @@ body {
     height: 80vh; 
     border-radius: 20px;
     background-color: var(--corEsquerda);
+    margin-bottom: 10vh;
 }
 
 .nomeEstoque {
