@@ -80,6 +80,7 @@ body {
     border: none;
     color: var(--corTexto);
     font-size: 3vh;
+    text-decoration: none;
 }
 
 .menu-item2:hover {
