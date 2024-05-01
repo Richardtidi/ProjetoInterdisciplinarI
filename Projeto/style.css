@@ -147,44 +147,34 @@ body {
     color: var(--corTexto);
 }
 
-
 .corBackground {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: center; 
+    height: 100vh; 
     background-color: var(--corDireita);
+    margin: auto;
 }
 
 .divTabela {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:auto;
-    width: 90vh;
-    max-width: 800px;
+    justify-content: center;
+    width: 90vh; 
+    height: 80vh; 
     border-radius: 20px;
     background-color: var(--corEsquerda);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10vh;
+    padding: 5vh;
 }
 
-.nomeEstoque {
-    margin: 0;
-    font-size: 28px;
-    color: var(--corEsquerda);
-}
-
-/* Estilos para a tabela */
 .tabela {
     width: 100%;
     border-collapse: collapse;
 }
 
-.tabela th,
-.tabela td {
-    padding: 10px;
+.tabela th, .tabela td {
+    padding: 12px;
     text-align: left;
     border-bottom: 1px solid var(--corEsquerda);
 }
@@ -195,10 +185,20 @@ body {
 }
 
 .tabela tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--corBackgroundPar);
+}
+
+.tabela tbody tr:nth-child(odd) {
+    background-color: var(--corBackgroundImpar);
 }
 
 
+.nomeEstoque {
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: var(--corEsquerda);
+}
 
 #confirmar {
     margin-top: 10px;
