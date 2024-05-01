@@ -189,3 +189,7 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
+tr {
+    border-top: solid 2px var(--corDireita);
+}
