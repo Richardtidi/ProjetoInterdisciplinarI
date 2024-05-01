@@ -191,5 +191,5 @@ body {
 }
 
 tr {
-    border-top: solid 2px var(--corEsquerda);
+    border-top: 2px solid var(--corDireita);
 }
