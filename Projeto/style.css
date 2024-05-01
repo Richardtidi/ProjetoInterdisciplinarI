@@ -160,7 +160,7 @@ body {
     display: flex;
     justify-content: center;
     width: 90vh; 
-    height: 90vh; 
+    height: 80vh; 
     border-radius: 20px;
     background-color: var(--corEsquerda);
 }
