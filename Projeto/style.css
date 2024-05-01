@@ -148,26 +148,26 @@ body {
 }
 
 /* Estilos para a página HTML */
-body {
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--corDireita);
+    padding: 0;
+    height: 100%;
 }
 
 .corBackground {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    height: 100vh; 
+    align-items: center;
+    height: 100%;
+    background-color: var(--corDireita);
 }
 
 .divTabela {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     max-width: 800px;
-    margin-top: 20px;
     border-radius: 20px;
     background-color: var(--corEsquerda);
     padding: 20px;
@@ -201,6 +201,7 @@ body {
 .tabela tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 
 
 #confirmar {
