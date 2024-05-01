@@ -190,6 +190,6 @@ body {
     justify-content: flex-end;
 }
 
-tr {
+.linhaTabela {
     border-top: 2px solid var(--corDireita);
 }
