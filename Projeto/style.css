@@ -189,9 +189,3 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
-.linhaTabela {
-    width: 90vh; 
-    border-top: 2px solid var(--corDireita);
-
-}
