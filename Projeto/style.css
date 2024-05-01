@@ -157,10 +157,9 @@ body {
     margin: auto;
 }
 
-.tabela {
+.divTabela {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     width: 90vh; 
     height: 80vh; 
     border-radius: 20px;
@@ -168,27 +167,6 @@ body {
     margin-bottom: 10vh;
     padding: 5vh;
 }
-
-.tabela th, .tabela td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid var(--corEsquerda);
-}
-
-.tabela th {
-    background-color: var(--corEsquerda);
-    color: var(--corDireita);
-}
-
-.tabela tbody tr:nth-child(even) {
-    background-color: var(--corBackgroundPar);
-}
-
-.tabela tbody tr:nth-child(odd) {
-    background-color: var(--corBackgroundImpar);
-}
-
-
 
 .nomeEstoque {
     margin: 50px;
