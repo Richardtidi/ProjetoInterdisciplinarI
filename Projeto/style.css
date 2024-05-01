@@ -157,7 +157,7 @@ body {
     margin: auto;
 }
 
-.divTabela {
+.tabela {
     display: flex;
     justify-content: center;
     width: 90vh; 
@@ -166,11 +166,6 @@ body {
     background-color: var(--corEsquerda);
     margin-bottom: 10vh;
     padding: 5vh;
-}
-
-.tabela {
-    width: 100%;
-    border-collapse: collapse;
 }
 
 .tabela th, .tabela td {
@@ -191,6 +186,7 @@ body {
 .tabela tbody tr:nth-child(odd) {
     background-color: var(--corBackgroundImpar);
 }
+
 
 
 .nomeEstoque {
