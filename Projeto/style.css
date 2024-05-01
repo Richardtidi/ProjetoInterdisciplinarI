@@ -164,6 +164,7 @@ body {
     border-radius: 20px;
     background-color: var(--corEsquerda);
     margin-bottom: 10vh;
+    padding: 5vh;
 }
 
 .nomeEstoque {
