@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Novo Estoque</title>
+</head>
+<body>
+    <div class="colunaEsquerda">
+        <div class="imgCima"><img src="{{ url_for('custom_static', filename='imagem2.jpg') }}" alt="Imagem 2"></div>
+        <div class="imgBaixo"><img src="{{ url_for('custom_static', filename='Imagem1.jpeg') }}" alt="Imagem 1"></div>
+    </div>
+    <h1 id="ola">Olá, {{ first_name }}!</h1>
+    <a href="{{ url_for('logout') }}" id="logout"><button id="confirmar">Logout</button></a>
+    <div class="colunaDireita">
+        <h1>Adicionar Novo Item ao Estoque</h1>
+
+        {% if mensagem %}
+        <p>{{ mensagem }}</p>
+        {% endif %}
+        <div class="inputs">
+            <form action="{{ url_for('novo_estoque') }}" method="POST">
+                <div class="nomeInputs">
+                    <label for="tipo">Tipo:</label>
+                    <input id="inputIndividual" type="text" id="tipo" name="tipo" required>
+                </div>
+                <div class="nomeInputs">
+                    <label for="tamanho">Tamanho:</label>
+                    <input id="inputIndividual" type="text" id="tamanho" name="tamanho" required>
+                </div>
+                <div class="nomeInputs">
+                    <label for="genero">Gênero:</label>
+                    <input id="inputIndividual" type="text" id="genero" name="genero" required>
+                </div>
+                <div class="nomeInputs">
+                    <label for="quantidade">Quantidade:</label>
+                    <input id="inputIndividual" type="number" id="quantidade" name="quantidade" required>
+                </div>
+                <div>
+                    <button id="confirmar" type="submit">Adicionar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Botão para ir manualmente para a página Gerenciar Estoque -->
+        <a href="{{ url_for('gerenciar_estoque') }}"><button class="menu-item">Ir para Gerenciar Estoque</button></a>
+        <a href="{{ url_for('index') }}"><button class="menu-item">Voltar para a Página Inicial</button></a>
+    </div>
+</body>
+</html>

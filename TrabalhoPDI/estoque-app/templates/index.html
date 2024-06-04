@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Página Inicial - Estoque App</title>
+</head>
+<body>
+    <div class="colunaEsquerda">
+        <div class="imgCima"><img src="{{ url_for('custom_static', filename='imagem2.jpg') }}" alt="Imagem 2"></div>
+        <div class="imgBaixo"><img src="{{ url_for('custom_static', filename='Imagem1.jpeg') }}" alt="Imagem 1"></div>
+    </div>
+    <h1 id="ola">Olá, {{ first_name }}!</h1>
+    <a href="{{ url_for('logout') }}" id="logout"><button id="confirmar">Logout</button></a>
+    <div class="colunaDireita">
+        <div class="botoes">
+            <a href="{{ url_for('novo_estoque') }}"><button class="menu-item">Novo item</button></a>
+            <div class="linha"></div>
+            <a href="{{ url_for('gerenciar_estoque') }}"><button class="menu-item">Gerenciar estoque</button></a>
+            <div class="linha" id="grossa"></div>
+            <a href="{{ url_for('edit_profile') }}"><button class="menu-item">Editar Perfil</button></a>
+            <div class="linha" id="grossa"></div>
+            <a href="{{ url_for('ajuda') }}"><button class="menu-item">Central de ajuda</button></a>
+            <div class="linha"></div>
+            <a href="{{ url_for('quem_somos') }}"><button class="menu-item">Quem somos</button></a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
